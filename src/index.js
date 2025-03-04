@@ -11,6 +11,12 @@ try {
   execSync("/bin/bash -c 'pip3 install s3cmd --no-cache'")
 }
 
+const provider = providers[core.getInput('provider')];
+
+core.info("Provider: " + provider);
+
+core.info(providers[core.getInput('provider')]);
+
 const conf = makeConf(providers[core.getInput('provider')]({
   region: core.getInput("region"),
   account_id: core.getInput("account_id"),
