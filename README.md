@@ -16,6 +16,7 @@ Currently the below providers are supported, but it could be used with other pro
 - Hetzner Cloud
 - Synology C2
 - Wasabi
+- Yandex
 
 ## Inputs
 
